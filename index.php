@@ -15,7 +15,13 @@
 		echo "Nom du fichier : <i>" . $_POST["file"] . "</i><br />";
 		$tableau = explode('.', $_POST["file"]);
 		$extension = "." . array_pop($tableau);
-		echo "Extension : <i>" . $extension . "</i>";
+		echo "Extension : <i>" . $extension . "</i><br/>";
+		if(strtolower($extension)==='.pdf'){
+			echo "L'extension est un PDF ";
+		}else{
+			echo"Ce n'est pas un fichier pdf";
+		}
+		
 		
 	}else{
 		echo ' <form action="index.php" method= "post">
@@ -32,11 +38,7 @@
 		<input type = "submit" value = "envoyer">
 	</form>';
 }
-
-
 ?>
-
-
 
 </body>
 </html>
