@@ -12,10 +12,7 @@
 		<input type="text" name="firstName">
 		<input type = "submit" value = "envoyer">
 	</form>
-	<?php
-	echo $_POST["name"];
-	echo $_POST["firstName"];
-	?>
+	
 
 </body>
 </html>
