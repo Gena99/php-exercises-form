@@ -10,6 +10,7 @@
 		echo $_POST["civilite"];
 		echo $_POST["name"];
 		echo $_POST["firstName"];
+		echo $_POST["file"];
 	}else{
 
 		echo '<form action="index.php" method= "post">
@@ -21,7 +22,10 @@
 		<input type="text" name = "name">
 		<label for ="firstName"> Prenom</label>
 		<input type="text" name="firstName">
+		<label for ="fichier"> Fichier</label>
+		<input type = "file" name = "file">
 		<input type = "submit" value = "envoyer">
+
 	</form>';
 }
 
